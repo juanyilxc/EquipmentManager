@@ -1,1 +1,5 @@
 D:\demo\EquipmentManager\EquipmentManager\bin\Debug\EquipmentManager.exe.config
+D:\demo\EquipmentManager\EquipmentManager\obj\Debug\EquipmentManager.csprojResolveAssemblyReference.cache
+D:\demo\EquipmentManager\EquipmentManager\obj\Debug\WindowsFormsApplication2.MainForm.resources
+D:\demo\EquipmentManager\EquipmentManager\obj\Debug\EquipmentManager.Properties.Resources.resources
+D:\demo\EquipmentManager\EquipmentManager\obj\Debug\EquipmentManager.csproj.GenerateResource.Cache
