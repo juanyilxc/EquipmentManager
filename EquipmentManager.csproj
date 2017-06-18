@@ -11,6 +11,21 @@
     <AssemblyName>EquipmentManager</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,17 +59,204 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMaintain.Designer.cs">
+      <DependentUpon>AddMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPurchse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPurchse.Designer.cs">
+      <DependentUpon>AddPurchse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddScrap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScrap.Designer.cs">
+      <DependentUpon>AddScrap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTransfer.Designer.cs">
+      <DependentUpon>AddTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass.cs" />
     <Compile Include="dbConnection.cs" />
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoEmployee.Designer.cs">
+      <DependentUpon>InfoEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoEquipmnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoEquipmnet.Designer.cs">
+      <DependentUpon>InfoEquipmnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoMaintain.Designer.cs">
+      <DependentUpon>InfoMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoPurchase.Designer.cs">
+      <DependentUpon>InfoPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoScrap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoScrap.Designer.cs">
+      <DependentUpon>InfoScrap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoTransfer.Designer.cs">
+      <DependentUpon>InfoTransfer.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModifyEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyEmployee.Designer.cs">
+      <DependentUpon>ModifyEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyMaintain.Designer.cs">
+      <DependentUpon>ModifyMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyPurchase.Designer.cs">
+      <DependentUpon>ModifyPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyScrap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyScrap.Designer.cs">
+      <DependentUpon>ModifyScrap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyTransfer.Designer.cs">
+      <DependentUpon>ModifyTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PendingPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PendingPurchase.Designer.cs">
+      <DependentUpon>PendingPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PendingScrap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PendingScrap.Designer.cs">
+      <DependentUpon>PendingScrap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PendingTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PendingTransfer.Designer.cs">
+      <DependentUpon>PendingTransfer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchase.Designer.cs">
+      <DependentUpon>purchase.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMaintain.resx">
+      <DependentUpon>AddMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPurchse.resx">
+      <DependentUpon>AddPurchse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddScrap.resx">
+      <DependentUpon>AddScrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTransfer.resx">
+      <DependentUpon>AddTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoEmployee.resx">
+      <DependentUpon>InfoEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoEquipmnet.resx">
+      <DependentUpon>InfoEquipmnet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoMaintain.resx">
+      <DependentUpon>InfoMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoPurchase.resx">
+      <DependentUpon>InfoPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoScrap.resx">
+      <DependentUpon>InfoScrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoTransfer.resx">
+      <DependentUpon>InfoTransfer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyEmployee.resx">
+      <DependentUpon>ModifyEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyMaintain.resx">
+      <DependentUpon>ModifyMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyPurchase.resx">
+      <DependentUpon>ModifyPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyScrap.resx">
+      <DependentUpon>ModifyScrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyTransfer.resx">
+      <DependentUpon>ModifyTransfer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -77,6 +279,32 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="database\shebei.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="database\shebei_log.ldf">
+      <DependentUpon>shebei.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
